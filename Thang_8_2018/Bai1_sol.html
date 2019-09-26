@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../main.css">
+  <!-- <link rel="stylesheet" href="../LaTeXMathML.standardarticle.css"> -->
+  <title>Chuyên Mục Quán Hình Học Phẳng Tháng 8 năm 2018</title>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="header-left">
+        <div class="name">QuanHHP</div>
+      </div>
+      <div class="header-right">
+      <div id="home"><a href="../index.html">HOME</a></div>
+      <div id="post">POST</div>
+      <div id="about"><a href="../about.html">ABOUT</a></div>
+      </div>
+    </div>
+  </header>
+  <div class="post-main-nav"></div>
+  <div class="post-content">
+    <div class="post-content-post">
+      <div class="content-title">Bài 1 tháng 8/2018</div>
+      <div class="content-title">Nguyễn Duy Khương</div>
+      <div class="LaTeX problem">
+        
+        <h3>Bài 1 - Bài toán đề nghị tháng 8/2018 - Nguyễn Duy Khương</h3>
+        
+        Cho tam giác `\triangle ABC` có tiếp điểm đường tròn bàng tiếp góc ` A` với `BC` là `E`. Gọi `K` là hình chiếu của `E`
+        lên đường trung bình ứng với đỉnh `A` của tam giác `\triangle ABC`. Chứng minh `(K,KE)` tiếp xúc với `(O)`.
+        
+      </div>
+      
+      <div class="LaTeX sol">
+        <h3>Lời giải 1 - Nguyễn Duy Khương</h3>
+        <br>
+        Đổi mô hình coi vai trò mới của `(O)` là đường tròn `(BOC)` bài toán trở thành bài toán sau:
+        <br>
+        <h4>Bài toán mới - Trần Quang Hùng (AoPS)</h4>
+        <br>
+        Cho tam giác `\triangle ABC` nội tiếp đường tròn `(O)`. Gọi `M = AO \cap BC`, `N = AO \cap (BOC)`
+        và `P` là trung điểm `MN`. Đường cao `AH`, `K` là hình hình của `P` lên `AH`. Chứng minh
+        rằng: đường tròn `(H,HK)` tiếp xúc với đường tròn `(BOC)`.
+        <br>
+        <h4>Chứng minh bài toán mới</h4>
+        <br>
+        Gọi `Q` là trung điểm `BC`. Gọi `I = OH \cap (BOC)` (điểm `I \neq O`) thì ta có: `OH.OI = OB^2` suy ra: 
+        `OI = \frac{R^2}{OH}` nên:
+        <br><br> 
+        `\frac{IH}{OI} = 1 - \frac{OH^2}{R^2} = 1 - \frac{OQ^2 + \frac{ST^2}{4}}{R^2}` 
+        `= 1 − (\cos \angle A)^2 − (\cos ACS)^2 = (sin  A)^2 − (sin( B −  C))^2`
+        `= (sin  A − sin( B −  C))(sin  A + sin( B −  C)) = sin(2 B).sin(2 C)`.
+        <br><br> 
+        Gọi `J` là tâm của đường tròn `(BOC)`, ta có: `\frac{OB}{2OJ} = \cos  A` suy ra `OJ = \frac{R^2}{2OQ}`. 
+        <br><br> 
+        Gọi `R = KP \cap OQ`, ta có `HKRQ` là hình chữ nhật do `HK = QR`. 
+        <br><br> 
+        Ta có: `\frac{QR}{OQ} = \frac{MN}{2OM}` suy ra `QR = \frac{MN.OQ}{2OM}` nên `\frac{OJ}{HK} = \frac{R^2.OM}{OQ^2.MN}`. 
+        Theo bổ đề cát tuyến ta có: `\frac{OM}{MN} = \frac{OB.OC}{BN.CN} = \frac{\cos ( A)^2}{sin(2 C).sin(2 B)}`. 
+        <br><br> 
+        Mà `\frac{R^2}{OQ^2} = \frac{1}{\cos( A)^2}` vậy `\frac{HK}{OJ} = sin(2 B).sin(2 C)`. 
+        <br><br> 
+        Tóm lại ta có: `\frac{HK}{OJ} = \frac{IH}{OI}` do đó `I`, `K`, `J` thẳng hàng dẫn đến đường tròn `(K,KH)` tiếp xúc `(BOC)`. 
+      </div>
+      <div class="content-read"><a href="https://www.geogebra.org/m/x6a8nkgu" target="blank">Geogebra</a></div>
+      <div class="LaTeX sol">
+        <h3>Lời giải 2 - Zeref</h3>
+        <br>
+        Xét bài toán sau: Cho tam giác `\triangle ABC` có `AD`, `BE`, `CF` là các đường cao. Gọi `G` là hình chiếu vuông góc của
+        `A` lên `EF` và `L` là hình chiếu của `D` lên `AG`. Chứng minh rằng đường tròn `(GL)` tiếp xúc với đường tròn `(DEF)`.
+        <br><br>
+        Vai trò của tam giác `\triangle DEF` và đường tròn `(GL)` trong bài toán này tương tự vai trò của tam giác `\triangle ABC` và đường tròn `(K,KE)` ở
+        bài toán gốc.
+        <br><br>
+        Gọi `H` là trực tâm, `M`, `N`, `K` lần lượt là trung điểm `BC`, `AH`, `GL`, `P = AG \cap BC` và `Q = AH \cap EF`. 
+        Ta sẽ chứng minh `NG \bot ML`.
+        <br><br>
+        Do `(AH,QD) = −1` nên `NA^2 = NQ.ND \implies \frac{NA}{NQ} = \frac{ND}{NA} = \frac{MD}{MP}`
+        <br><br>
+        Mà tam giác `\triangle GAQ ~ \triangle LDP` (chú ý các tam giác vuông). Do đó tam giác `\triangle AGN ~ \triangle DLM`.
+        <br><br>
+        Ta có: `\angle GNM + \angle LMN = \angle AGN + \angle LMN = \angle DLM + \angle LMN = 90^{circ}`
+        <br><br>
+        Do đó `NG \bot ML`. Gọi `X = NG \cap ML`, góc `\angle NXD = 90^{circ}` nên `X \in (DEF)`. Và `GL || MN \implies X \in (K;KG)`
+        <br><br>
+        Vậy `X \in (K;KG)`, `(DEF)` và `GL || MN` nên đường tròn `(K;KG)` tiếp xúc với đường tròn `(DEF)`.
+      </div>
+      <div class="content-read"><a href="https://www.geogebra.org/m/setbf8kb" target="blank">Geogebra</a></div>
+      <div class="LaTeX sol">
+        <h3>Lời giải 3 - Nguyễn Hà An</h3>
+        <br>
+        Gọi `I_a` là tâm bàng tiếp đỉnh `A`, `D`, `F` là tiếp điểm của đường tròn `(I_a)` với `CA`, `AB`. Gọi `M`, `M^'` là trung điểm cung nhỏ, cung lớn
+        `\angle BC`, `G = (AI_a) \cap (O)` (điểm `G \ne A`).
+        <br><br>
+        Dễ thấy tam giác `\triangle GBE ∼ \triangle GCD \implies \frac{GB}{GC} = \frac{BF}{CD} = \frac{BE}{CE} \implies CE` là phân giác góc `\angle BGC` 
+        hay `G`, `E` và `M` thẳng hàng. 
+        <br><br>
+        Gọi `K^' = OG \cap I_aE` thì do `KE || OM` và tam giác `\triangle OGM` cân tại `O \implies K^'E = K^'G \implies (K^',KE)` tiếp xúc đường tròn `(O)` tại `G`.
+        <br><br>
+        Lấy `E^'` đối xứng `E` qua `K^'` thì `\angle EGE^' = 90^{circ} = \angle MGM^'` mà `M`, `E` và `G` thẳng hàng nên `G`, `E
+        ` và `M^'` thẳng hàng.
+        <br><br>
+        Vì vậy góc `\angle AGE^' = \angle AGM^' = \angle AMM^' = \angle AI_aE^' \implies A, E^', G, I_a` nội tiếp hay `AE^' || BC`. Từ đó có `K^'` thuộc
+        đường trung bình đỉnh `A`. Vậy `K^' ≡ K` hay đường tròn `(K,KE)` tiếp xúc đường tròn `(O)`.
+      </div>
+      <div class="content-read"><a href="https://www.geogebra.org/m/setbf8kb" target="blank">Geogebra</a></div>
+    </div>
+    
+  </div>
+  <script>
+      MathJax = {
+        loader: {load: ['input/asciimath', 'output/chtml', 'ui/menu']},
+      };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+  </script>
+  <script src="../index.js"></script>
+</body>
+</html>

@@ -38,3 +38,12 @@ document.addEventListener('DOMContentLoaded',function(event){
   // start the text animation
   StartTextAnimation(0);
 });
+
+window.MathJax = {
+  loader: {
+    load: ['input/asciimath']
+  },
+  asciimath: {
+    delimiters: [['$','$'], ['`','`']]
+  }
+});
